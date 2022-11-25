@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#758BFD"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Inicio de sesión"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#27187E"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="50px"
+            android:fontFamily="@font/roboto"
+            android:text="Usuario"
+            android:textColor="#F1F2F6"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63px"
+            android:layout_marginRight="50px"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#F1F2F6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="50px"
+            android:fontFamily="@font/roboto"
+            android:text="Contraseña"
+            android:textColor="#F1F2F6"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#F1F2F6" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#27187E"
+        android:fontFamily="@font/roboto"
+        android:text="Iniciar sesión" />
+
+</LinearLayout>

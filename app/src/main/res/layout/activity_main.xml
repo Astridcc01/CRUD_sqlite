@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#758BFD"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:fontFamily="@font/roboto"
+        android:text="Añadir transacción"
+        android:textAlignment="center"
+        android:textColor="#27187E"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nombre del cliente"
+        android:inputType="text"
+        android:textColor="#F1F2F6" />
+
+    <EditText
+        android:id="@+id/et_concepto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Concepto de la transacción"
+        android:inputType="textPersonName"
+        android:textColor="#F1F2F6" />
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Precio de la transacción"
+        android:inputType="numberDecimal"
+        android:textColor="#F1F2F6" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#27187E"
+        android:fontFamily="@font/roboto"
+        android:text="Añadir" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:fontFamily="@font/roboto_black_italic"
+        android:text="Transacciones:"
+        android:textColor="#27187E"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

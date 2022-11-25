@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#758BFD"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:fontFamily="@font/roboto"
+        android:text="Editar transacción"
+        android:textAlignment="center"
+        android:textColor="#27187E"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_id_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="ID"
+        android:inputType="number"
+        android:textColor="#F1F2F6" />
+
+    <EditText
+        android:id="@+id/et_nombre_nuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nuevo nombre"
+        android:inputType="textPersonName"
+        android:textColor="#F1F2F6" />
+
+    <EditText
+        android:id="@+id/et_concepto_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nuevo concepto"
+        android:inputType="textPersonName"
+        android:textColor="#F1F2F6" />
+
+    <EditText
+        android:id="@+id/et_precio_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nuevo precio"
+        android:inputType="number"
+        android:textColor="#F1F2F6" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#27187E"
+        android:fontFamily="@font/roboto"
+        android:text="Editar" />
+
+</LinearLayout>
